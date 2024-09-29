@@ -1,0 +1,9 @@
+from random import choice
+q = "=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+lent = 7
+#lent = int(input('длина пароля'))
+parol = ""
+for i in range (lent):
+    parol += choice(q)
+print ("parol-", parol)
+вывело P=w1D9d
