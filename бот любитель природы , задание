@@ -1,0 +1,63 @@
+import telebot
+import random
+import requests
+from telebot import TeleBot
+from telebot import formatting
+from time import sleep, time
+import os
+from telebot.types import ReactionTypeEmoji, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto, InputMediaVideo
+
+bot = telebot.TeleBot("------------------------------------------------------------------------------------------------------------------------------------")
+
+
+www = (' Несколько экологических советов: Покупать только то, что действительно необходимо, отдавая предпочтение долговечным вещам. 3Сдавать отходы на переработку. Это не только уменьшит объём свалок, но и поможет сохранить ресурсы. 3Ответственно избавляться от опасных отходов, к которым относятся электроника, ртутные лампы и термометры, бытовая химия, лаки, краски, просроченные лекарства, отработанные масла, автомобильные покрышки и др.. 3 Выключать свет и электроприборы из сети, когда ими не пользуетесь. Отдавать предпочтение энергоэффективной бытовой технике и тд.')
+
+def send_f(message):
+            bot.send_media_group(message.chat.id, [
+                InputMediaPhoto(open('imag\\mem1.jpeg', 'rb')), 
+                InputMediaPhoto(open('imag\\mem2.jpeg', 'rb'))])
+
+
+    
+
+def generate_keys():
+    keyboard = InlineKeyboardMarkup()
+    keyboard.add(InlineKeyboardButton('советы ', callback_data='1'),
+                 InlineKeyboardButton('видео', callback_data='2'),
+                 InlineKeyboardButton('картинки', callback_data='3'),
+                 InlineKeyboardButton('больше инфы', callback_data='4'))
+        
+    return keyboard
+@bot.message_handler(commands=['sov'])
+def send_c(message):
+    bot.send_message(message.chat.id, 'C чем тебе помочь?', reply_markup=generate_keys())
+@bot.callback_query_handler(func= lambda call: True)
+def answer(call):
+    if call.data == '4':
+        # не работает , обьясните почему
+        bot.send_message(call.message.chat.id, 'ссылка : https://yandex.ru/search/?text=эко+советы&clid=2270455&banerid=2359004952%3A8285142845207347199%3A66b491b49b1838323e45c2fe&win=658&lr=11168', True)
+    elif call.data == '1':
+        bot.send_message(call.message.chat.id, www)
+    elif call.data == '2':
+        # не работает , обьясните почему
+        bot.send_media_group(call.message.chat.id, [ 
+        InputMediaVideo(open('rost\\saaa/mp4', 'rb'))])
+    elif call.data == '3':
+        bot.send_media_group(call.message.chat.id, [
+        InputMediaPhoto(open('rost\\qqq.jpg', 'rb')),
+        InputMediaPhoto(open('rost\\www.jpg', 'rb')),  
+        InputMediaPhoto(open('rost\\eee.jpg', 'rb'))])
+
+
+#можно изменить на видео
+@bot.message_handler(commands=['foto'])
+def send_f(message):
+    bot.send_media_group(message.chat.id, [
+        InputMediaPhoto(open('imag\\mem1.jpeg', 'rb')), 
+        InputMediaPhoto(open('imag\\mem2.jpeg', 'rb'))])
+
+@bot.message_handler(func=lambda message: True)
+def echo_all(message):
+    bot.reply_to(message, message.text)
+    
+bot.polling()
