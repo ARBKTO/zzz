@@ -26,3 +26,21 @@
     <a href="<iframe width="560" height="315" src="https://www.youtube.com/embed/72Clade6ZHY?si=fLhOoSyr2wpEnoQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>.
    </video>
 </html>
+
+
+#это дизайн 
+body {
+    font-family: impact,  sans-serif; /* Семейство шрифтов */
+    font-size: 166px; /* Размер основного шрифта в <p></p>  */
+    background-color: #174605; /* Цвет фона веб-страницы */
+    color: #12c9e9; /* Цвет основного текста */ 
+}
+h1 {
+    color: #a0db5b; /* Цвет заголовка */
+    font-size: 300px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
+
+
+
+
