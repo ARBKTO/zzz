@@ -40,6 +40,16 @@ h1 {
     font-size: 300px; /* Размер шрифта в пунктах */
     font-family: Candara , serif; /* Семейство шрифтов */
 }
+h2 {
+    color: #87e0a2; /* Цвет заголовка */
+    font-size: 300px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
+h3 {
+    color: #db5b5b; /* Цвет заголовка */
+    font-size: 300px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
 
 
 
