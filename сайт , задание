@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>плюсы игры Noita</title>
+</head>
+<body>
+    <h1>плюсы игры Noita</h1>
+    <h3>а когда будут грехи ?</h3>
+    <head>
+        <title> мне лично игра очень понравилась</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p>Noita - это игра про ведьмачку(финскую), в которой есть заклинания и палочки и хийси.</p>
+    <h2>А это заголовок поменьше-+или по большее!</h2>
+            <ul>
+                <li> с  ней не будет зависимости!</li>
+                <li>эта игра лучшая в мире! </li>
+                <li> хочешь грибочков ?</li>
+                <li> и тд.</li>
+            </ul>
+     <img src="https://avatars.mds.yandex.net/i?id=e1d0f1e773183a5b894eb6e646033eb3_l-5348787-images-thumbs&n=13" alt="Image 1">
+     
+</body>
+ # как приделать правильно видео , видео не работает
+<video>
+    <a href="<iframe width="560" height="315" src="https://www.youtube.com/embed/72Clade6ZHY?si=fLhOoSyr2wpEnoQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>.
+   </video>
+</html>
