@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>плюсы игры Noita</title>
+</head>
+<body>
+    <h1>плюсы игры Noita</h1>
+    <h3>а когда будут грехи ?</h3>
+    <head>
+        <title> мне лично игра очень понравилась</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p>Noita - это игра про ведьмачку(финскую), в которой есть заклинания и палочки и хийси.</p>
+    <h2>это не зависимость!</h2>
+            <ul>
+                <li> с  ней не будет зависимости!</li>
+                <li>эта игра лучшая в мире! </li>
+                <li> хочешь грибочков ?</li>
+                <li> и тд.</li>
+            </ul>
+     <img src="https://avatars.mds.yandex.net/i?id=e1d0f1e773183a5b894eb6e646033eb3_l-5348787-images-thumbs&n=13" alt="Image 1">
+     <video src=""></video>
+
+
+    
+    <source src="iframe width="560" height="315" src="https://www.youtube.com/embed/72Clade6ZHY?si=DdqliVzG4ecuh_yG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+    <video src="D:\св игр\питон\для яндекса.mp4" type="video/mp4"></video>
+
+    <video controls="controls">
+        <source src="D:\св игр\питон\для яндекса.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=METER_PER_SECOND&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=1&precipitation=1&precipitationprobability=1&spot=1&pressure=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 467px"></iframe><div>
+        <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=METER_PER_SECOND&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=1&precipitation=1&precipitationprobability=1&spot=1&pressure=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 467px"></iframe><div><!-- НЕ УДАЛЯЙТЕ ЭТУ ССЫЛКУ --><a href="https://www.meteoblue.com/en/weather/week/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">слова</a></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+это другое
+body {
+    font-family: impact,  sans-serif; /* Семейство шрифтов */
+    font-size: 166px; /* Размер основного шрифта в <p></p>  */
+    background-color: #174605; /* Цвет фона веб-страницы */
+    color: #12c9e9; /* Цвет основного текста */ 
+}
+h1 {
+    color: #a0db5b; /* Цвет заголовка */
+    font-size: 300px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+
+    25% {
+        color: rgb(17, 46, 05);
+      }
+  
+    50% {
+        color: blue;
+        font-size: 310px;
+      }
+    
+    75% {
+      color: rgb(17, 46, 05);
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+
+
+h2 {
+    color: #87e0a2; /* Цвет заголовка */
+    font-size: 400px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
+h3 {
+    color: #db5b5b; /* Цвет заголовка */
+    font-size: 200px; /* Размер шрифта в пунктах */
+    font-family: Candara , serif; /* Семейство шрифтов */
+}
+
+
+
+
+
