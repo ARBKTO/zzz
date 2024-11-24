@@ -1,0 +1,79 @@
+from flask import Flask
+import random
+from random import choice
+
+app = Flask(__name__)
+
+#               <img src="ссылка на картинку" alt="Image 1">
+
+facts_list = ["огласно исследованию, проведённому в 2019 году, более 60% людей отвечают на рабочие сообщения на своих смартфонах в течение 15 минут после того, как они ушли с работы.",
+            "огласно исследованию, проведённому в 2019 году, более 60% людей отвечают на рабочие сообщения на своих смартфонах в течение 15 минут после того, как они ушли с работы.",
+            "аск также выступает за регулирование социальных сетей и защиту личных данных пользователей. Он утверждает, что социальные сети собирают огромное количество информации о нас, которую затем можно использовать для манипулирования нашими мыслями и поведением.",
+            "грибы это вкусно"]
+
+грибы = ["это вкусно",
+         "расширяется сознание",
+         "могут заменить лаву на воду",]
+
+q = "_=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+длина = 10
+parol = ""
+
+#def send_game :
+#    msg = 3
+#    if  msg > 4:
+#        
+#    elif  msg < 3:
+#        
+#    else:
+
+
+        
+
+fotogrib = ["http://зеленогорск.спб.рф/uploads/posts/2021-07/1626867017_888.jpg",
+            "https://schuchincrb.by/images/scale_1200.webp",
+            "https://fs01.cap.ru/www20/galatr/news/2020/09/22/dbc633a3-f0f6-4769-8e67-d2c299089901/nastolcom_ua-68528.jpg"]
+
+@app.route("/")
+def ddd ():
+    return ' <img src="https://avatars.mds.yandex.net/i?id=af57b5278127cfc6cb2b0ed526d514a9_l-10375634-images-thumbs&n=13" alt="Image 1"><h1>поесть грибов</h1> <a href="/sss/"> давай </a><h1>или</h1> <a href="/eee/"> рандомный факт </a><h1> грибы</h1>  <a href="/ee/"> плюсы грибов </a><h1>нажми</h1>  <a href="/ss/"> чтото </a><h1>пароль</h1>  <a href="/r/"> нужен? </a>'
+
+#   @app.route("/   /")
+#   def hello_world ():
+#       return f' '
+
+@app.route("/eee/")
+def hello_world ():
+    return f'<a href="/eee/">заново</a> <p>{random.choice(facts_list)}</p> <a href="/">вернутся</a>'
+
+@app.route("/sss/")
+def rfhe_s ():
+    return '<h1>грибы хочу</h1> <a href="/">вернутся</a><img src="https://mingochs.krasnodar.ru/upload/resize_cache/iblock/e36/n8k8a0t7ejmv7no8v1r48xzqwrmcfqea/1280_1280_1/gribi_opyata.jpg" alt="Image 1">'
+
+@app.route("/ee/")
+def hell_worl ():
+    return f'<a href="/ee/">заново</a> <a href="/">вернутся</a> <p>{random.choice(грибы)}</p>  <img src={random.choice(fotogrib)} alt="Image 1">'
+
+@app.route("/ss/")
+def rfe_s ():
+    return '<h1>не чтото</h1> <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=METER_PER_SECOND&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=1&precipitation=1&precipitationprobability=1&spot=1&pressure=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 467px"></iframe><div> <a href="/">вернутся</a> <a href="/a/">или подолжить</a>'
+
+@app.route("/r/")
+def rfe ():
+    return f'<h1>хочешь сделаю пароль?</h1>  <a href="/s/">да</a> <a href="/">нет</a>'
+
+@app.route("/s/")
+def gen_pass ():
+    lent = 100
+    elements = "+-/*!&$#?=@<>_=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    password = ""
+    for i in range(lent):
+        password += random.choice(elements)
+    return f' <a> копируй или сгенерь </a><a href="/s/">заново</a> <p>{(password)}</p> <a href="/">вернутся</a> <a> или надежный пароль 1111</a>'
+@app.route("/a/")
+def aaa ():
+    return f' <a href="/">вернутся</a> <a>на кубике выполо:</a><p>{random.choice(1 , 6)}</p>'
+
+
+app.run(debug=True)
